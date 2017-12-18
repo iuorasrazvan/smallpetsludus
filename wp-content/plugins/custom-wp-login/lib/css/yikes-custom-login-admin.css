@@ -1,0 +1,186 @@
+/**
+ * YIKES Inc Custom Login
+ * Admin Styles
+ * @since 1.0
+ */
+
+/**
+ * Admin Options Styles
+ */
+#postbox-container-1 .yikes-plugins-logo,
+.options-sidebar .yikes-plugins-logo {
+	display: block;
+	padding: 8px 10px 5px 8px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 100%;
+}
+
+.options-sidebar .meta-box-sortables .postbox .inside {
+	margin: 0 !important;
+	padding: 0;
+}
+
+.recaptcha-icon {
+	vertical-align: middle;
+}
+
+/**
+ * Pages Section Styles
+ */
+	select.yikes-select2 + .select2 {
+		min-width: 100%;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+	}
+/* End Admin Options Styles */
+
+
+/**
+ * Admin Settings sections
+	*	Sections:
+	*		-	General
+	*		- Pages
+ */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-general table:nth-child(n+6) /* All sections after 'General' Section */ {
+		display: none;
+	}
+
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-pages table:nth-child(5), /* General Section */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-pages table:nth-child(n+7) /* All sections after 'Pages' Section */ {
+		display: none;
+	}
+
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-recaptcha table:nth-child(5), /* General Section */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-recaptcha table:nth-child(6), /* Pages Section */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-recaptcha table:nth-child(n+8) /* All sections after 'Branding' Section */ {
+		display: none;
+	}
+
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-branding table:nth-child(5), /* General Section */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-branding table:nth-child(6), /* Pages Section */
+	body.settings_page_yikes-custom-login .yikes-custom-login-settings-branding table:nth-child(7) /* reCAPTCHA Section */ {
+		display: none;
+	}
+
+	body.settings_page_yikes-custom-login input[type="password"].widefat {
+		width: 100% !important;
+	}
+
+	body.settings_page_yikes-custom-login span.yikes-custom-template-badge {
+		display: inherit;
+		padding: 3px 5px;
+		background: #1B95E0;
+		color: #fff;
+		border-radius: 3px;
+		position: absolute;
+		margin-top: 5px;
+		font-size: 11px;
+	}
+
+	@media screen and (max-width: 783px) {
+		body.settings_page_yikes-custom-login span.yikes-custom-template-badge {
+			display: inline;
+			position: relative;
+			margin-left: 5px;
+			margin-bottom: 5px;
+		}
+	}
+
+	/**
+	 * Branding Uploads
+	 */
+	.branding_logo_preview {
+		display: none;
+		margin-top: 1em;
+	}
+
+		.branding_logo_preview.preview-active {
+			display: inline-block;
+			max-width: 500px;
+		}
+
+			.branding_logo_preview.preview-active img {
+				width: 100%;
+			}
+
+	.branding_logo_preview .remove-branding-logo {
+  transition: all .2s ease-in;
+		position: absolute;
+	}
+
+	.branding_logo_preview .remove-branding-logo:hover {
+		color: #ED7D7D;
+		cursor: pointer;
+	}
+
+	.rate-and-review a,
+	.rate-and-review a:hover,
+	.rate-and-review a:visited {
+		text-decoration: none;
+	}
+
+	.rate-and-review span.dashicons.dashicons-star-filled {
+		color: goldenrod;
+	}
+
+		.rate-and-review span.dashicons.dashicons-star-filled:first-child,
+		.rate-and-review p.rate-and-review-text,
+		.twitter-share-button,
+		p.tweet-experience-text {
+			padding-left: 12px;
+		}
+
+		.twitter-share-button {
+			margin-top: .5em;
+		}
+
+		p.support-and-docs-text {
+			margin-top: 0;
+			padding: 0 12px;
+		}
+
+		.doc-link,
+		.doc-link:hover {
+		 box-sizing: border-box;
+			display: block !important;
+			width: 95%;
+			margin: 0 auto !important;
+			margin-top: 8px;
+			padding: 5px 0 !important;
+			height: auto !important;
+			text-align: center;
+			background-repeat: no-repeat !important;
+			background-size: 20px !important;
+			background-position-x: 22.5% !important;
+			background-position-y: 8px !important;
+		}
+
+		.doc-link.wp-bg,
+		.doc-link.wp-bg:hover,
+		.doc-link.wp-bg:focus {
+			background-image: url( '../../images/wordpress-icon.png' );
+		}
+
+		.doc-link.github-bg,
+		.doc-link.github-bg:hover,
+		.doc-link.github-bg:focus {
+			background-image: url( '../../images/github-icon.png' );
+		}
+
+		.doc-link.docs-bg,
+		.doc-link.docs-bg:hover,
+		.doc-link.docs-bg:focus {
+			background-image: url( '../../images/docs-icon.png' );
+		}
+
+		.support-and-docs-container,
+		.rate-and-review-container {
+			padding-bottom: .75em !important;
+		}
+
+/* End Admin Settings Sections */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInlpa2VzLWN1c3RvbS1sb2dpbi1hZG1pbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7R0FJRzs7QUFFSDs7R0FFRztBQUNIOztDQUVDLGVBQWU7Q0FDZiwwQkFBWTtDQUNaLHVCQUFvQjtDQUNwQixtQkFBQTtDQUNBLFlBQUE7Q0FDQTs7QUFFRDtDQUNBLHFCQUFBO0NBQ0MsV0FBQTtDQUNBOztBQUVEO0NBQ0EsdUJBQUE7Q0FDQzs7QUFFRDs7R0FFRztDQUNGO0VBQ0EsZ0JBQUE7RUFDQSxzQkFBQTtFQUNELDJCQUFBO0VBQ0UsOEJBQThCO0VBQzlCLDBCQUEwQjtFQUM1QjtBQUNBLDhCQUE4Qjs7O0FBRzlCOzs7OztHQUtHO0NBQ0Y7RUFDQyxjQUFjO0VBQ2Q7O0NBRUQ7O0VBRUMsY0FBYztFQUNkOztDQUVEOzs7RUFHQyxjQUFjO0VBQ2Q7O0NBRUQ7OztFQUdDLGNBQWM7RUFDZDs7Q0FFRDtFQUNDLHVCQUFnQjtFQUNoQjs7Q0FFRDtFQUNDLGlCQUFDO0VBQ0QsaUJBQUM7RUFDRCxvQkFBQztFQUNELFlBQVk7RUFDWixtQkFBQztFQUNELG1CQUFjO0VBQ2QsZ0JBQUU7RUFDRixnQkFBZ0I7RUFDakI7O0NBRUE7RUFJQztHQUZDLGdCQUFnQjtHQUlsQixtQkFBQTtHQUNDLGlCQUFlO0dBQ2YsbUJBQWdCO0dBQ2hCO0VBRkE7O0NBRUQ7O0lBRUM7Q0FDRDtFQUNDLGNBQWM7RUFDZixnQkFBQTtFQUNDOztFQUVBO0dBQ0Esc0JBQUE7R0FDQyxpQkFBaUI7R0FDakI7O0dBRUE7SUFDQSxZQUFBO0lBQ0M7O0NBRUg7RUFDQyw0QkFBQztFQUNELG1CQUFtQjtFQUNuQjs7Q0FFRDtFQUNDLGVBQUM7RUFDRCxnQkFBZ0I7RUFDaEI7O0NBRUQ7OztFQUdDLHNCQUVDO0VBREQ7O0NBRUQ7RUFDQyxpQkFFQztFQUREOztFQUVBOzs7O0dBTUEsbUJBQUE7R0FEQzs7RUFFRDtHQUdDLGlCQUFBO0dBREE7O0VBRUQ7R0FDQyxjQUFjO0dBR2QsZ0JBQUE7R0FDQTs7RUFFRDs7R0FBQyx1QkFBdUI7R0FHdkIsMEJBQUE7R0FDQSxXQUFBO0dBREEsMEJBQTBCO0dBRzNCLGdCQUFBO0dBREMsMEJBQTBCO0dBRzFCLHdCQUFBO0dBQ0EsbUJBQUE7R0FEQSx3Q0FBd0M7R0FHM0MsaUNBQWlDO0dBRDlCLHdDQUF3QztHQUN4QyxzQ0FBc0M7R0FDdEM7O0VBRUQ7OztHQUdDLDJEQUEyRDtHQUMzRDs7RUFFRDs7O0dBR0Msd0RBQXdEO0dBQ3hEOztFQUVEOzs7R0FHQyxzREFBc0Q7R0FDdEQ7O0VBRUQ7O0dBRUMsaUNBQWlDO0dBQ2pDOztBQUVILGlDQUFpQyIsImZpbGUiOiJ5aWtlcy1jdXN0b20tbG9naW4tYWRtaW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBZSUtFUyBJbmMgQ3VzdG9tIExvZ2luXG4gKiBBZG1pbiBTdHlsZXNcbiAqIEBzaW5jZSAxLjBcbiAqL1xyXG4iXX0= */

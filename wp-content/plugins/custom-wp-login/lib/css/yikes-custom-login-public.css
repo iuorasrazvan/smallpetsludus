@@ -1,0 +1,599 @@
+/**
+ * YIKES Inc Custom Login
+ * Public Styles
+ * @since 1.0
+ */
+
+/**
+ * Login Form Styles
+ */
+#yikes-custom-login-form .login-username label,
+#yikes-custom-login-form .login-username input[type="text"],
+#yikes-custom-login-form .login-password label,
+#yikes-custom-login-form .login-password input[type="password"] {
+	display: block;
+	width: 100%;
+}
+
+#yikes-custom-login-form .login-username input[type="text"],
+#yikes-custom-login-form .login-password input[type="password"],
+#yikes-lost-password-form input[type="text"],
+#yikes-register-form input[type="text"],
+#yikes-register-form input[type="email"],
+#yikes-register-form input[type="url"] {
+	padding: 5px;
+	color: #555;
+	font-size: 18px;
+}
+/** End Login Form Styles **/
+
+/**
+ * Lost Password Form Styles
+ */
+ #yikes-lost-password-form label,
+ #yikes-lost-password-form input[type="text"] {
+	display: block;
+	width: 100%;
+ }
+
+ #yikes-lost-password-form input[type="text"] {
+	padding: 5px;
+	font-size: 18px;
+	color: #555;
+ }
+/** End Lost Password Form Styles **/
+
+#yikes-custom-login-form p.login-username,
+#yikes-custom-login-form p.login-password,
+#yikes-custom-login-form p.login-remember,
+#yikes-custom-login-form p.login-submit,
+#new-password form p {
+	margin-bottom: .75em;
+}
+
+/**
+ * Reset Password Form
+ */
+#yikes-reset-password-form label,
+#yikes-reset-password-form input[type="text"],
+#yikes-reset-password-form input[type="password"] {
+	display: block;
+	width: 100%;
+}
+
+#yikes-reset-password-form input[type="text"],
+#yikes-reset-password-form input[type="password"] {
+	padding: 5px;
+	font-size: 18px;
+	color: #555;
+}
+/** End Reset Password Form **/
+
+/**
+ * Registration Form Styles
+ */
+	#yikes-register-form label,
+	#yikes-register-form input[type="text"],
+	#yikes-register-form input[type="email"] {
+		display: block;
+		width: 100%;
+	}
+
+	#yikes-register-form input[type="text"],
+	#yikes-register-form input[type="email"] {
+		padding: 5px;
+		font-size: 18px;
+		color: #555;
+	}
+/** End Registration Form Styles */
+
+/**
+ * Account Info Form Styles
+ */
+	#yikes-account-info-form label,
+	#yikes-account-info-form input[type="text"],
+	#yikes-account-info-form input[type="email"],
+	#yikes-account-info-form input[type="url"] {
+		display: block;
+		width: 100%;
+	}
+
+	#yikes-account-info-form input[type="text"],
+	#yikes-account-info-form input[type="email"],
+	#yikes-account-info-form input[type="url"] {
+		padding: 5px;
+		font-size: 18px;
+		color: #555;
+	}
+
+	#yikes-account-info-form textarea {
+		resize: vertical;
+	}
+
+	#yikes-account-info-form a.button.reset-pass {
+		background: #D9EDF7;
+		color: #333;
+		display: inline-block;
+	}
+
+	#new-password form[name="resetpasswordform"] label,
+	#new-password form[name="resetpasswordform"] input[type="password"] {
+		display: block;
+		width: 100%;
+	}
+
+	#new-password form[name="resetpasswordform"] input[type="password"] {
+		padding: 5px;
+		font-size: 18px;
+	}
+
+	#new-password #wp-submit:disabled {
+		opacity: .6;
+	}
+
+	/**
+	 * Password Strength Box
+	 */
+		#pass-strength-result {
+			background-color: #eee;
+			border: 1px solid #ddd;
+			color: #23282d;
+			padding: 5px;
+			margin-bottom: 5px;
+			text-align: center;
+			box-sizing: border-box;
+			opacity: 0;
+			width: 100%;
+			display: block;
+			transition: opacity .3s ease-in-out;
+			-moz-transition: opacity .3s ease-in-out;
+			-webkit-transition: opacity .3s ease-in-out;
+		}
+
+		#pass-strength-result.short {
+			background-color: #f1adad;
+			border-color: #e35b5b;
+			opacity: 1;
+		}
+
+		#pass-strength-result.bad {
+			background-color: #fbc5a9;
+			border-color: #f78b53;
+			opacity: 1;
+		}
+
+		#pass-strength-result.good {
+			background-color: #ffe399;
+			border-color: #ffc733;
+			opacity: 1;
+		}
+
+		#pass-strength-result.strong {
+			background-color: #c1e1b9;
+			border-color: #83c373;
+			opacity: 1;
+		}
+
+		#pass1.short, #pass1-text.short {
+			border-color: #e35b5b;
+		}
+
+		#pass1.bad, #pass1-text.bad {
+			border-color: #f78b53;
+		}
+
+		#pass1.good, #pass1-text.good {
+			border-color: #ffc733;
+		}
+
+		#pass1.strong, #pass1-text.strong {
+			border-color: #83c373;
+		}
+
+		/**
+		 * Custom Login Page Template
+		 * Password Lost Template
+		 * Registration Template (to do)
+		 */
+
+		body.yikes-custom-page-template {
+			width: 100%;
+			height: 100%;
+			display: table;
+			margin: 0 auto;
+		}
+
+			body.yikes-custom-page-template:before,
+			body.yikes-custom-page-template:after {
+				display: none !important;
+			}
+
+			body.yikes-custom-page-template .yikes-custom-page-template-interior {
+				height: 100%;
+				display: table-cell;
+				vertical-align: middle;
+				background: #2B2B2B;
+				background-size: cover;
+				padding-bottom: 7%; /* Pushes things back up a bit */
+			}
+
+			.yikes-custom-page-template-interior .page-container {
+				border-radius: 4px;
+				border: none;
+				width: 33%;
+				max-width: 550px;
+				min-width: 320px;
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0 auto;
+			}
+
+			.yikes-custom-page-template-interior a.yikes-custom-login-site-branding {
+				display: block;
+			}
+
+			.yikes-custom-page-template-interior .interior {
+				padding: 2em;
+				border-radius: 4px;
+				border: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0 auto;
+				background: rgba(254, 254, 254, 0.60);
+			}
+
+			.yikes-custom-page-template-interior .yikes-custom-login-site-branding img {
+				display: block;
+				margin: 0 auto;
+				margin-bottom: .5em;
+			}
+
+			a.forgot-password.pull-left {
+				float: left;
+			}
+
+			a.register-account.pull-right {
+				float: right;
+			}
+
+			.preloader-container {
+			  display: none;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+
+		    text-align:center; /* Align center inline elements */
+		    font: 0/0 a;
+			}
+
+			.preloader-container:before {
+			    content: ' ';
+			    display: inline-block;
+			    vertical-align: middle;
+			    height: 95%;
+			}
+
+			.preloader-container img.login-preloader {
+			    vertical-align: middle;
+			    display: inline-block;
+			}
+
+			#yikes-custom-user-registration-template .yikes-register-note {
+				margin: .75em 0;
+			}
+
+			#yikes-custom-user-registration-template #password-lost-form,
+			#yikes-custom-user-registration-template #password-reset-form {
+				padding: 0;
+				margin: 0;
+			}
+
+				#yikes-custom-user-registration-template #password-lost-form p:first-child {
+					margin-top: 0;
+				}
+
+			.powered-by-yikes {
+				opacity: .75;
+				position: absolute;
+				bottom: 5px;
+				right: 0;
+				font-style: italic;
+				color: #fff;
+				font-size: 12px;
+				padding-left: 10px;
+				width: 100%;
+				text-align: left;
+			}
+
+				.powered-by-yikes a,
+				.powered-by-yikes a:hover,
+				.powered-by-yikes a:visited {
+					color: #fff !important;
+					text-decoration: none;
+				}
+
+				/*
+				 * Prevent weird sidebar on certian themes
+				 */
+				body.yikes-custom-page-template:before,
+				body.yikes-custom-page-template:after {
+					display: none;
+				}
+
+			/**
+			 * Logged in account details container
+			 */
+			#yikes-logged-in-user-details .links {
+				display: block;
+				margin-top: 5px;
+				font-size: small;
+				width: 100%;
+			}
+
+			/**
+			 * Widget Styles
+			 */
+			.widget .login-form-container a.forgot-password.pull-left {
+				float: left;
+				display: block;
+				margin: 3px 0;
+				width: 100%;
+			}
+
+			.widget .login-form-container a.register-account.pull-right {
+				float: right;
+				display: block;
+				width: 100%;
+			}
+	/** Css3 Popups */
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		transition: opacity 500ms;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 9;
+	}
+	.overlay:target {
+		visibility: visible;
+		opacity: 1;
+	}
+	.yikes-custom-login-popup {
+		margin: 7% auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		width: 50%;
+		position: relative;
+		transition: all 5s ease-in-out;
+	}
+	.yikes-custom-login-popup h2 {
+		margin-top: 0;
+		color: #333;
+		font-family: Tahoma, Arial, sans-serif;
+	}
+	.yikes-custom-login-popup .close {
+		position: absolute;
+		top: 10px;
+		right: 25px;
+		transition: all 200ms;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		border: none;
+		box-shadow: none;
+		color: #333;
+	}
+	.yikes-custom-login-popup .close:hover {
+		color: #FFBEBE;
+	}
+	.yikes-custom-login-popup .content {
+		max-height: 30%;
+		overflow: auto;
+		}
+
+	@media screen and (max-width: 768px) {
+		.yikes-custom-login-popup {
+		  width: 90%;
+			margin: 15% auto;
+		}
+	}
+	/** End Popups **/
+/** End Registration Form Styles */
+
+/**
+ * Frontend Responsive Grid System
+ */
+	/*  SECTIONS  */
+	.section {
+		clear: both;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*  COLUMN SETUP  */
+	.col {
+		display: block;
+		float:left;
+		margin: 1% 0 1% 1.6%;
+	}
+	.col:first-child { margin-left: 0; }
+
+	/*  GROUPING  */
+	.group:before,
+	.group:after { content:""; display:table; }
+	.group:after { clear:both;}
+	.group { zoom:1; /* For IE 6/7 */ }
+
+	/*  GRID OF TWO  */
+	.span_2_of_2 {
+		width: 100%;
+	}
+	.span_1_of_2 {
+		width: 49.2%;
+	}
+
+	/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+	@media only screen and (max-width: 480px) {
+		.col {
+			margin: 1% 0 1% 0%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.span_2_of_2, .span_1_of_2 { width: 100%; }
+	}
+/** End Responsive Grid System **/
+
+/**
+ * Alert/Notices
+ */
+	.yikes-custom-login-alert {
+		padding: 15px;
+		margin-bottom: .5em;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+
+	.yikes-custom-login-alert h4 {
+		margin-top: 0;
+		color: inherit;
+	}
+
+	.yikes-custom-login-alert .alert-link {
+		font-weight: bold;
+	}
+
+	.yikes-custom-login-alert > p,
+	.yikes-custom-login-alert > ul {
+		margin-bottom: 0;
+	}
+
+	.yikes-custom-login-alert > p + p {
+		margin-top: 5px;
+	}
+
+	.yikes-custom-login-alert-dismissable,
+	.yikes-custom-login-alert-dismissible {
+		padding-right: 35px;
+	}
+
+	.yikes-custom-login-alert-dismissable .close,
+	.yikes-custom-login-alert-dismissible .close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		color: inherit;
+	}
+
+	.yikes-custom-login-alert-success {
+		color: #3c763d;
+		background-color: #dff0d8;
+		border-color: #d6e9c6;
+	}
+
+	.yikes-custom-login-alert-success hr {
+		border-top-color: #c9e2b3;
+	}
+
+	.yikes-custom-login-alert-success .alert-link {
+		color: #2b542c;
+	}
+
+	.yikes-custom-login-alert-info {
+		color: #31708f;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+	}
+
+	.yikes-custom-login-alert-info hr {
+		border-top-color: #a6e1ec;
+	}
+
+	.yikes-custom-login-alert-info .alert-link {
+		color: #245269;
+	}
+
+	.yikes-custom-login-alert-warning {
+		color: #8a6d3b;
+		background-color: #fcf8e3;
+		border-color: #faebcc;
+	}
+
+	.yikes-custom-login-alert-warning hr {
+		border-top-color: #f7e1b5;
+	}
+
+	.yikes-custom-login-alert-warning .alert-link {
+		color: #66512c;
+	}
+
+	.yikes-custom-login-alert-danger {
+		color: #a94442;
+		background-color: #f2dede;
+		border-color: #ebccd1;
+	}
+
+	.yikes-custom-login-alert-danger hr {
+		border-top-color: #e4b9c0;
+	}
+
+	.yikes-custom-login-alert-danger .alert-link {
+		color: #843534;
+	}
+/** End Alert/Notices **/
+
+
+/**
+ * Animation Classes
+ */
+	.yikes-animated {
+		animation-duration: 1s;
+		animation-fill-mode: both;
+	}
+
+	@keyframes yikes_fadeInDown {
+		from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+		}
+
+		to {
+		opacity: 1;
+		transform: none;
+		}
+	}
+
+	.yikes-fadeInDown {
+		animation-name: yikes_fadeInDown;
+	}
+
+	@keyframes yikes_fadeIn {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+
+	.yikes-fadeIn {
+		animation-name: yikes_fadeIn;
+	}
+ /** End Animation Classes **/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInlpa2VzLWN1c3RvbS1sb2dpbi1wdWJsaWMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O0dBSUc7O0FBRUg7O0dBRUc7QUFDSDs7OztDQUlDLGVBQWU7Q0FDZixZQUFZO0NBQ1o7O0FBRUQ7Ozs7OztDQU1BLGFBQUE7Q0FDQyxZQUFZO0NBQ2IsZ0JBQUE7Q0FDQztBQUNELDZCQUFDOztBQUVEOztHQUVDO0NBQ0E7O0NBRUEsZUFBQTtDQUNBLFlBQUE7RUFDQTs7Q0FFRDtDQUNDLGFBQWE7Q0FDZCxnQkFBQTtDQUNDLFlBQVk7RUFDWjtBQUNELHFDQUFBOztBQUVBOzs7OztDQUtDLHFCQUFxQjtDQUNyQjs7QUFFRDs7R0FFQTtBQUNBOzs7Q0FHQyxlQUFBO0NBQ0QsWUFBQTtDQUNDOztBQUVEOztDQUVDLGFBQUE7Q0FDQSxnQkFBZ0I7Q0FDaEIsWUFBWTtDQUNaO0FBQ0QsK0JBQUU7O0FBRUY7O0dBRUc7Q0FDRjs7O0VBR0QsZUFBQTtFQUNFLFlBQVk7RUFDZDs7Q0FFQzs7RUFFQyxhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWjtBQUNGLG1DQUFjOztBQUVkOztHQUVHO0NBQ0Y7Ozs7RUFJQyxlQUFlO0VBQ2hCLFlBQUE7RUFDQzs7Q0FFRDs7O0VBR0EsYUFBQTtFQUNDLGdCQUFBO0VBQ0EsWUFBWTtFQUNiOztDQUVBO0VBQ0MsaUJBQUE7RUFDQTs7Q0FFRDtFQUNDLG9CQUFBO0VBQ0EsWUFBQTtFQUNBLHNCQUFzQjtFQUN2Qjs7Q0FFQTs7RUFFQSxlQUFBO0VBQ0MsWUFBWTtFQUNaOztDQUVEO0VBQ0MsYUFFRDtFQURDLGdCQUVBO0VBREE7O0NBRUQ7RUFDQyxZQUVEO0VBREM7O0NBRUQ7O0lBSUQ7RUFERTtHQUdDLHVCQUFBO0dBREEsdUJBQXVCO0dBQ3hCLGVBQUE7R0FDQSxhQUFBO0dBR0EsbUJBQUE7R0FDQSxtQkFBQTtHQUNELHVCQUFBO0dBREUsV0FBVztHQUNaLFlBQUE7R0FDQSxlQUFBO0dBR0Esb0NBQUE7R0FD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Q0FFRDtFQUNBLDBCQUFBO0VBQ0M7O0NBRUQ7RUFDRCxlQUFBO0VBQ0U7O0NBRUQ7RUFDQSxlQUFBO0VBQ0MsMEJBQTBCO0VBQzNCLHNCQUFBO0VBQ0M7O0NBRUQ7RUFDQywwQkFBQTtFQUNGOztDQUVDO0VBQ0QsZUFBQTtFQUNFOztDQUVEO0VBQ0MsZUFBZTtFQUNqQiwwQkFBQTtFQUNFLHNCQUFzQjtFQUN0Qjs7Q0FFRDtFQUNBLDBCQUFBO0VBQ0M7O0NBRUQ7RUFDQyxlQUFlO0VBQ2hCO0FBQ0QseUJBQUU7OztBQUdGOztHQUVHO0NBQ0Y7RUFFQyx1QkFBRDtFQUVDLDBCQUFBO0VBQ0E7O0NBZ0JEO0VBQ0M7RUFDQSxXQUFBO0VBRUEsb0NBQW9DO0dBQ3JDOztFQUVDO0VBQ0EsV0FBRDtFQUVBLGdCQUFBO0dBQ0M7RUFDQTs7Q0FFRDtFQUVDLGlDQUFBO0VBQ0E7O0NBWUQ7RUFDQztHQUNDLFdBQVc7R0FDWDs7RUFFRDtHQUNDLFdBQVc7R0FDWDtFQUNEOztDQUVEO0VBRUMsNkJBQTZCO0VBQzdCO0NBQ0QsNkJBQTZCIiwiZmlsZSI6Inlpa2VzLWN1c3RvbS1sb2dpbi1wdWJsaWMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBZSUtFUyBJbmMgQ3VzdG9tIExvZ2luXG4gKiBQdWJsaWMgU3R5bGVzXG4gKiBAc2luY2UgMS4wXG4gKi9cbiJdfQ== */

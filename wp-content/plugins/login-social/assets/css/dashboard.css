@@ -1,0 +1,68 @@
+.hg-mui-notice {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 10px 10px 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    color: #565656;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.hg-mui-cluster {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: row wrap;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+}
+
+.hg-mui-card {
+    max-width: 500px;
+    margin: 10px 20px 5px 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    color: #444;
+}
+
+.hg-mui-card:nth-child(2){animation-delay: 0.3s;}
+.hg-mui-card:nth-child(3){animation-delay: 0.6s;}
+
+.hg-mui-card * {
+    color: #444;
+}
+
+.hg-mui-card-wrap {
+    display: flex;
+    height: 100%;
+}
+
+.hg-mui-card-title {
+    font-size: 1.5rem;
+}
+
+.hg-mui-card-content,
+.hg-mui-card-content * {
+    font-size: 0.9rem;
+}
+
+.hg-mui-card-content p {
+    margin: 0.5em 0;
+}
+
+.hg-mui-card-img-block {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.hg-mui-card .button-primary {
+    margin-top: 15px;
+}

@@ -1,0 +1,1013 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+.hg_login_hide {
+    display:none;
+}
+
+.hg-login-modal .icon {
+    display: inline-block;
+    fill: currentColor;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    vertical-align: middle;
+}
+
+.-inline-block {
+    display:inline-block;
+}
+
+.-inline-flex {
+    display:inline-flex;
+}
+
+.-align-stretch {
+    align-items: stretch;
+}
+
+.-justify-between {
+    justify-content: space-between;
+}
+
+.center-center {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.hg-login-layout,
+.-layout {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.-horizontal {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.-center,
+.-center-center {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+
+.-self-center {
+    align-self: center;
+}
+
+.-justify-center, .-center-center {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.hg-login-vertical {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.--flex {
+    display: flex;
+}
+
+.-flex {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.type-button,
+.-button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.type-button.shape-circle .button--content {
+    padding: 0;
+    min-width: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.button--content {
+    padding: 0;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.-space-v-24>*:first-child {
+    margin-top: 0;
+}
+.-space-v-24>* {
+    margin-top: 24px;
+}
+
+.type-button.shape-circle {
+    border-radius: 50%;
+}
+
+.-button.-size-24 .button--content {
+    padding: 0 10px;
+    min-width: 48px;
+    height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+.-button.-view-flat .button--content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.-button.-view-flat {
+    background: transparent;
+}
+
+.-button.-view-flat:hover {
+    background: transparent;
+}
+
+.-button.-view-flat.-type-primary {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #1bbc45;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 50px;
+    margin: 15px auto 5px;
+}
+
+.hg-login-via-social {
+    text-align: center;
+    font-size: 13px;
+    color: #b2b1b1;
+    margin: 6px 0;
+}
+
+.modal-auth--social-button {
+    border-radius: 2px;
+    overflow: hidden;
+    max-width: 114px;
+    margin: 0 auto 8px auto !important;;
+}
+
+.modal-auth--social-button:last-child {
+    margin-right: 0;
+}
+
+
+.modal-auth--social-button a {
+    display: block;
+    padding: 5px 15px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius:2px;
+}
+
+.modal-auth--social-button a:hover,
+.modal-auth--social-button a:active,
+.modal-auth--social-button a:focus {
+    text-decoration: none;
+}
+
+
+.modal-auth--social-button .-gplus {
+    background-color: #dd4b39;
+}
+
+.modal-auth--social-button .-git {
+    background-color: #545454;
+}
+
+.modal-auth--social-button .-twitter {
+    background-color: #55acee;
+}
+
+.-space-v-8>*:first-child {
+    margin-top: 0;
+}
+
+.-space-v-8>* {
+    margin-top: 8px;
+}
+
+.-button.-type-primary {
+    background: #3498DB;
+    color: #ffffff;
+}
+
+.-button.-type-light {
+    background: #ffffff;
+    color: #666666;
+}
+
+.-button.-view-flat {
+    background: transparent;
+}
+
+.-button.-view-flat .button--content,
+.-button.-view-flat.-size-24 .button--content,
+.-button.-view-flat.-size-32 .button--content,
+.-button.-view-flat.-size-48 .button--content,
+.-button.-view-flat.-size-56 .button--content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.icon.-size-24,
+.icon.-size-24 svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+}
+
+.hg-login-button,
+.hg-signup-button {
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: currentColor;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7px 6px;
+    margin: 6px 8px;
+    background: 0 0;
+    white-space: nowrap;
+    min-width: 88px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: inherit;
+    font-variant: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.hg-login-utton.primary {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+
+#hg_login_primary_form_popup {
+
+}
+
+#hg_login_primary_form_popup {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.hg-login-modal-overlay {
+    display:block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hg-login-modal-fit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hg-login-modal-container {
+    display: block;
+    outline: none;
+    width: 350px;
+    min-height: 250px;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    line-height: 20px;
+    max-width: 612px;
+    padding: 0;
+    z-index: 9999;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    max-height: initial;
+}
+
+.hg-login-modal-content {
+    padding: 0;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.hg-login-modal-header {
+    display:block;
+    min-height: 70px;
+    padding: 14px 14px 14px 24px;
+    margin-bottom: 0;
+    position: relative;
+    text-align: center;
+}
+
+.hg-login-modal-header h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px !important;
+    letter-spacing: 0;
+    margin: 0 !important;
+    line-height: 42px !important;
+}
+
+.hg-login-modal-subtitle {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hg-login-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hg-login-modal-body {
+    padding: 10px 20px;
+    position: relative;
+    min-height: 100px;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.hg-login-modal-recaptcha-wrap {
+    margin-top: 10px;
+}
+
+.hg-login-modal-inputs .-msg {
+    display:block;
+    font-size:12px;
+}
+
+.hg-login-modal-input {
+    position: relative;
+    margin-top:20px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.hg-login-modal-input input {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.hg-login-modal-input input[type="color"],
+.hg-login-modal-input input[type="date"],
+.hg-login-modal-input input[type="datetime"],
+.hg-login-modal-input input[type="datetime-local"],
+.hg-login-modal-input input[type="email"],
+.hg-login-modal-input input[type="month"],
+.hg-login-modal-input input[type="number"],
+.hg-login-modal-input input[type="password"],
+.hg-login-modal-input input[type="search"],
+.hg-login-modal-input input[type="tel"],
+.hg-login-modal-input input[type="text"],
+.hg-login-modal-input input[type="time"],
+.hg-login-modal-input input[type="url"],
+.hg-login-modal-input input[type="week"],
+.hg-login-modal-input textarea {
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px 10px 5px 5px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.hg-login-modal-input input:-webkit-autofill,
+.hg-login-modal-input textarea:-webkit-autofill,
+.hg-login-modal-input select:-webkit-autofill {
+    border-color: #CCCCCC;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-sizing: border-box;
+    color: #999;
+    font-size: 16px;
+    padding: 10px 10px 5px 5px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.hg-login-modal-input input[type="color"]:invalid,
+.hg-login-modal-input input[type="date"]:invalid,
+.hg-login-modal-input input[type="datetime"]:invalid,
+.hg-login-modal-input input[type="datetime-local"]:invalid,
+.hg-login-modal-input input[type="email"]:invalid,
+.hg-login-modal-input input[type="month"]:invalid,
+.hg-login-modal-input input[type="number"]:invalid,
+.hg-login-modal-input input[type="password"]:invalid,
+.hg-login-modal-input input[type="search"]:invalid,
+.hg-login-modal-input input[type="tel"]:invalid,
+.hg-login-modal-input input[type="text"]:invalid,
+.hg-login-modal-input input[type="time"]:invalid,
+.hg-login-modal-input input[type="url"]:invalid,
+.hg-login-modal-input input[type="week"]:invalid,
+.hg-login-modal-input textarea:invalid {
+    box-shadow: none;
+}
+
+.hg-login-modal-input input[type="color"] ~ label,
+.hg-login-modal-input input[type="date"] ~ label,
+.hg-login-modal-input input[type="datetime"] ~ label,
+.hg-login-modal-input input[type="datetime-local"] ~ label,
+.hg-login-modal-input input[type="email"] ~ label,
+.hg-login-modal-input input[type="month"] ~ label,
+.hg-login-modal-input input[type="number"] ~ label,
+.hg-login-modal-input input[type="password"] ~ label,
+.hg-login-modal-input input[type="search"] ~ label,
+.hg-login-modal-input input[type="tel"] ~ label,
+.hg-login-modal-input input[type="text"] ~ label,
+.hg-login-modal-input input[type="time"] ~ label,
+.hg-login-modal-input input[type="url"] ~ label,
+.hg-login-modal-input input[type="week"] ~ label,
+.hg-login-modal-input textarea ~ label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.hg-login-modal-input input[type="color"]:focus,
+.hg-login-modal-input input[type="date"]:focus,
+.hg-login-modal-input input[type="datetime"]:focus,
+.hg-login-modal-input input[type="datetime-local"]:focus,
+.hg-login-modal-input input[type="email"]:focus,
+.hg-login-modal-input input[type="month"]:focus,
+.hg-login-modal-input input[type="number"]:focus,
+.hg-login-modal-input input[type="password"]:focus,
+.hg-login-modal-input input[type="search"]:focus,
+.hg-login-modal-input input[type="tel"]:focus,
+.hg-login-modal-input input[type="text"]:focus,
+.hg-login-modal-input input[type="time"]:focus,
+.hg-login-modal-input input[type="url"]:focus,
+.hg-login-modal-input input[type="week"]:focus,
+.hg-login-modal-input textarea:focus {
+    outline: 0;
+}
+
+.hg-login-modal-input input[type="color"]:focus ~ label,
+.hg-login-modal-input input[type="color"]:valid ~ label,
+.hg-login-modal-input input[type="date"]:focus ~ label,
+.hg-login-modal-input input[type="date"]:valid ~ label,
+.hg-login-modal-input input[type="datetime"]:focus ~ label,
+.hg-login-modal-input input[type="datetime"]:valid ~ label,
+.hg-login-modal-input input[type="datetime-local"]:focus ~ label,
+.hg-login-modal-input input[type="datetime-local"]:valid ~ label,
+.hg-login-modal-input input[type="email"]:focus ~ label,
+.hg-login-modal-input input[type="email"]:valid ~ label,
+.hg-login-modal-input input[type="month"]:focus ~ label,
+.hg-login-modal-input input[type="month"]:valid ~ label,
+.hg-login-modal-input input[type="number"]:focus ~ label,
+.hg-login-modal-input input[type="number"]:valid ~ label,
+.hg-login-modal-input input[type="password"]:focus ~ label,
+.hg-login-modal-input input[type="password"]:valid ~ label,
+.hg-login-modal-input input[type="search"]:focus ~ label,
+.hg-login-modal-input input[type="search"]:valid ~ label,
+.hg-login-modal-input input[type="tel"]:focus ~ label,
+.hg-login-modal-input input[type="tel"]:valid ~ label,
+.hg-login-modal-input input[type="text"]:focus ~ label,
+.hg-login-modal-input input[type="text"]:valid ~ label,
+.hg-login-modal-input input[type="time"]:focus ~ label,
+.hg-login-modal-input input[type="time"]:valid ~ label,
+.hg-login-modal-input input[type="url"]:focus ~ label,
+.hg-login-modal-input input[type="url"]:valid ~ label,
+.hg-login-modal-input input[type="week"]:focus ~ label,
+.hg-login-modal-input input[type="week"]:valid ~ label,
+.hg-login-modal-input textarea:focus ~ label,
+.hg-login-modal-input textarea:valid ~ label {
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+    font-size: .85em;
+    top: -10px;
+}
+
+.hg-login-modal-input input[type="color"] ~ label sup,
+.hg-login-modal-input input[type="date"].invalid ~ label sup,
+.hg-login-modal-input input[type="datetime"].invalid ~ label sup,
+.hg-login-modal-input input[type="datetime-local"].invalid ~ label sup,
+.hg-login-modal-input input[type="email"].invalid ~ label sup,
+.hg-login-modal-input input[type="month"].invalid ~ label sup,
+.hg-login-modal-input input[type="number"].invalid ~ label sup,
+.hg-login-modal-input input[type="password"].invalid ~ label sup,
+.hg-login-modal-input input[type="search"].invalid ~ label sup,
+.hg-login-modal-input input[type="tel"].invalid ~ label sup,
+.hg-login-modal-input input[type="text"].invalid ~ label sup,
+.hg-login-modal-input input[type="time"].invalid ~ label sup,
+.hg-login-modal-input input[type="url"].invalid ~ label sup,
+.hg-login-modal-input input[type="week"].invalid ~ label sup,
+.hg-login-modal-input input[type="checkbox"].invalid ~ label sup,
+.hg-login-modal-input textarea:focus ~ label {
+    font-size: 72%;
+}
+
+.hg-login-modal-input input[type="color"] ~ span,
+.hg-login-modal-input input[type="date"] ~ span,
+.hg-login-modal-input input[type="datetime"] ~ span,
+.hg-login-modal-input input[type="datetime-local"] ~ span,
+.hg-login-modal-input input[type="email"] ~ span,
+.hg-login-modal-input input[type="month"] ~ span,
+.hg-login-modal-input input[type="number"] ~ span,
+.hg-login-modal-input input[type="password"] ~ span,
+.hg-login-modal-input input[type="search"] ~ span,
+.hg-login-modal-input input[type="tel"] ~ span,
+.hg-login-modal-input input[type="text"] ~ span,
+.hg-login-modal-input input[type="time"] ~ span,
+.hg-login-modal-input input[type="url"] ~ span,
+.hg-login-modal-input input[type="week"] ~ span,
+.hg-login-modal-input textarea ~ span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+    background: #3F51B5;
+    display: block;
+}
+
+.hg-login-modal-input input[type="color"].invalid ~ span,
+.hg-login-modal-input input[type="date"].invalid ~ span,
+.hg-login-modal-input input[type="datetime"].invalid ~ span,
+.hg-login-modal-input input[type="datetime-local"].invalid ~ span,
+.hg-login-modal-input input[type="email"].invalid ~ span,
+.hg-login-modal-input input[type="month"].invalid ~ span,
+.hg-login-modal-input input[type="number"].invalid ~ span,
+.hg-login-modal-input input[type="password"].invalid ~ span,
+.hg-login-modal-input input[type="search"].invalid ~ span,
+.hg-login-modal-input input[type="tel"].invalid ~ span,
+.hg-login-modal-input input[type="text"].invalid ~ span,
+.hg-login-modal-input input[type="time"].invalid ~ span,
+.hg-login-modal-input input[type="url"].invalid ~ span,
+.hg-login-modal-input input[type="week"].invalid ~ span,
+.hg-login-modal-input textarea.invalid ~ span {
+    background: #E53935;
+}
+
+.hg-login-modal-input input[type="color"]:focus ~ span,
+.hg-login-modal-input input[type="date"]:focus ~ span,
+.hg-login-modal-input input[type="datetime"]:focus ~ span,
+.hg-login-modal-input input[type="datetime-local"]:focus ~ span,
+.hg-login-modal-input input[type="email"]:focus ~ span,
+.hg-login-modal-input input[type="month"]:focus ~ span,
+.hg-login-modal-input input[type="number"]:focus ~ span,
+.hg-login-modal-input input[type="password"]:focus ~ span,
+.hg-login-modal-input input[type="search"]:focus ~ span,
+.hg-login-modal-input input[type="tel"]:focus ~ span,
+.hg-login-modal-input input[type="text"]:focus ~ span,
+.hg-login-modal-input input[type="time"]:focus ~ span,
+.hg-login-modal-input input[type="url"]:focus ~ span,
+.hg-login-modal-input input[type="week"]:focus ~ span,
+.hg-login-modal-input textarea:focus ~ span {
+    -webkit-transition: all 0.075s ease;
+    -moz-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+    width: 100%;
+}
+
+.hg-login-modal-input input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    margin: 0;
+    display: none;
+}
+
+.hg-login-modal-input input[type='checkbox'] + label {
+    position: relative;
+    display: table;
+    margin: .6em 0;
+    align-items: center;
+    color: #9e9e9e;
+    transition: color 250ms cubic-bezier(.4,.0,.23,1);
+    box-sizing: border-box;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.hg-login-modal-input input[type='checkbox'] + label > span {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 20px;
+    min-width: 20px;
+    vertical-align: middle;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #9E9E9E;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+.hg-login-modal-input input[type='checkbox']:focus + label > span {
+    border-color: #3498DB;
+}
+
+.hg-login-modal-input input[type='checkbox']:checked + label > span {
+    border: 10px solid #3F51B5;
+    animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
+}
+
+.hg-login-modal-input input[type='checkbox']:checked + label > span:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -7px;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+}
+
+@keyframes shrink-bounce{
+    0%{
+        transform: scale(1);
+    }
+    33%{
+        transform: scale(.85);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes checkbox-check{
+    0%{
+        width: 0;
+        height: 0;
+        border-color: #fff;
+        transform: translate3d(0,0,0) rotate(45deg);
+    }
+    33%{
+        width: 5px;
+        height: 0;
+        transform: translate3d(0,0,0) rotate(45deg);
+    }
+    100%{
+        width: 6px;
+        height: 14px;
+        border-color: #fff;
+        transform: translate3d(0,-.5em,0) rotate(45deg);
+    }
+}
+
+.hg-login-modal-terms-label {
+    margin-top: 16px;
+    position: relative;
+    display: inline-block;
+    left: 0;
+}
+
+.hg-login-modal-footer {
+    width: 100%;
+    box-shadow: 0 -1px 0 #E5E5E5;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.hg-login-modal-footer .hg_login_open_signup_button,
+.hg-login-modal-footer .hg_login_open_login_button {
+    margin-left: 10px;
+    line-height: 24px;
+}
+
+.hg_login_signup_form_notice {
+    margin: 0;
+    font-size: 13px;
+    color: #828181;
+}
+
+.hg_login_signup_form_inline_notice {
+    margin: 0;
+    font-size: 16px;
+    color: #a2a2a2;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.pass-short {
+    color :#e35b5b;
+}
+
+.pass-bad {
+    color: #f78b53;
+}
+
+.pass-good {
+    color: #ffc733;
+}
+
+.pass-strong {
+    color: #83c373;
+}
+
+.pass-short,
+.pass-bad,
+.pass-good,
+.pass-strong {
+    font-size: 75%;
+}
+
+#hg_login_popup_info_temp {
+    margin: 2em;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 24px;
+    border-radius: 2px;
+    float: left;
+    min-width: 216px;
+    max-width: 426px;
+    width: auto;
+    transition: all .3s ease;
+    cursor:pointer;
+    animation: show-login-popup-info .15s ease;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    z-index: 10000;
+}
+
+#hg_login_popup_info_temp.-success {
+    background: #4CAF50;
+}
+
+#hg_login_popup_info_temp.-notice {
+    background: #03A9F4;
+}
+
+#hg_login_popup_info_temp.-error {
+    background: #F44336;
+}
+
+#hg_login_popup_info_temp p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin:0;
+    padding:0;
+    font-weight:500;
+}
+
+#hg_login_popup_info_temp.close--popup {
+    right: -100%;
+    opacity:0;
+    animation: close-login-popup-info .15s ease;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes show-login-popup-info {
+    from {right: -100%;opacity:0}
+    to {right: 0;opacity:1}
+}
+
+/* Standard syntax */
+@keyframes show-login-popup-info {
+    from {right: -100%;opacity:0}
+    to {right: 0;opacity:1}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes close-login-popup-info {
+    from {right: 0;opacity:1}
+    to {right: -100%;opacity:0}
+
+}
+
+/* Standard syntax */
+@keyframes close-login-popup-info {
+    from {right: 0;opacity:1}
+    to {right: -100%;opacity:0}
+}
+
+.modal-auth--forgot-password {
+    color: rgba(52, 152, 219, 0.75);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    margin-top: 16px;
+    display:inline-flex;
+    line-height: 40px;
+}
+
+.hg-login-account-menu {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+.hg-login-account-menu a {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.hg-login-account-main {
+    display: inline-block;
+    position: relative;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #898e95;
+    cursor: pointer;
+
+    font-weight: 400;
+    padding: 0 15px 0 0;
+    -webkit-transition: .2s background,.2s color,.2s box-shadow;
+    transition: .2s background,.2s color,.2s box-shadow;
+    box-shadow: none !important;
+}
+
+.hg-login-account-main:hover {
+    color: #3F51B5;
+    text-decoration: none;
+}
+
+.hg-login-account-main img {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: center/cover #cdcfd2;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: top;
+    height: 48px;
+    width: 48px;
+    margin-left: 10px;
+    -webkit-transition: .2s box-shadow;
+    transition: .2s box-shadow;
+}
+
+.hg-login-account-main:hover img {
+    box-shadow: 0 0 0 3px #3F51B5;
+}
+
+.hg-login-account-main .hg-login-account-main-howdy {
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:16px;
+    line-height: 48px;
+    font-weight: 800;
+}
+
+.hg-login-account-main .hg-login-user-notifications-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px;
+    display: block;
+    background-color: #f14e56;
+    text-align: center;
+    color: #FFF;
+    min-width: 8px;
+    height: 25px;
+    border-radius: 13px;
+    font-weight: 800;
+    padding-left: 8px;
+    padding-right: 9px;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.hg-login-account-menu {
+    margin:10px;
+}
+
+.hg-login-account-dropdown-menu a {
+    color: #3F51B5;
+}
+
+.hg-login-account-dropdown-menu a:hover {
+    color: #7986CB;
+}
+
+.hg-login-popup-spinner-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
+
+.hg-login-popup-spinner {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hg-login-popup-spin {
+    width: 8px;
+    height: 8px;
+    background-color: #737373;
+    border-radius: 100%;
+    display: inline-block;
+    animation: hg-popup-bouncedelay 1.7s infinite ease-in-out both;
+    margin-right: 5px;
+}
+
+.hg-login-popup-spin.hg-spinner-1 {
+    animation-delay: -0.60s;
+}
+
+.hg-login-popup-spin.hg-spinner-2 {
+    animation-delay: -0.40s;
+}
+
+.hg-login-popup-spin.hg-spinner-3 {
+    animation-delay: -0.20s;
+}
+
+@keyframes hg-popup-bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+

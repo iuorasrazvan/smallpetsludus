@@ -1,0 +1,15 @@
+.crlfwnr_custom_form label { display: block; float: left; width: 150px; }
+.crlfwnr_custom_form input[type="text"], .pippin_form input[type="password"],
+.crlfwnr_custom_form input[type="email"] {
+    padding: 4px 8px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.crlfwnr_custom_form input[type="text"]:focus, .pippin_form input[type="password"]:focus,
+.crlfwnr_custom_form input[type="email"]:focus {
+    border-color: #aaa;
+}
+ 
+.crlfwnr_custom_errors { padding: 8px; border: 1px solid #f50; margin: 0 0 15px; }
+.error{color:#d8000c}
+.crlfwnr_required{color:#d8000c}
